@@ -30,12 +30,12 @@ const add_block = document.querySelector('.add');
 const add_item = form.addEventListener('submit', (e) => {
     e.preventDefault();
 
-    if (document.querySelector('select').selectedIndex === 0) {
+    if (add_value.value && document.querySelector('select').selectedIndex === 0) {
         add_new_income_item(add_description.value, add_value.value);
         form.reset();
         storage.income_sum = storage.income_sum + +storage.income_items[storage.income_items.length - 1].value
         document.querySelector('.budget__income--value').innerText = '+ ' + storage.income_sum + '.00';
-    } else if (document.querySelector('select').selectedIndex === 1) {
+    } else if (add_value.value && document.querySelector('select').selectedIndex === 1) {
         add_new_expenses_item(add_description.value, add_value.value);
         add_description.value = '';
         add_value.value = '';
