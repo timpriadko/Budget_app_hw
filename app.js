@@ -160,7 +160,7 @@ const create_income_tempate = (income) => {
         <div class="right clearfix">
             <div class="item__value">${income.value}</div>
             <div class="item__delete">
-                <button class="item__delete--btn"><i class="ion-ios-close-outline remove-item"></i></button>
+                <button class="item__delete--btn"><i class="icon ion-md-close remove-item"></i></button>
             </div>
         </div>
      </div>
@@ -205,7 +205,7 @@ const create_expenses_tempate = (expenses) => {
         <div class="right clearfix">
             <div class="item__value">${expenses.value}</div>
             <div class="item__delete">
-                <button class="item__delete--btn"><i class="ion-ios-close-outline remove-item"></i></button>
+                <button class="item__delete--btn"><i class="icon ion-md-close remove-item"></i></button>
             </div>
         </div>
      </div>
